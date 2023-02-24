@@ -7,10 +7,14 @@ using std::endl;
 
 int main()
 {
-    const short SIZE = 10;
-    int mas[SIZE]{};
-    // Цикл вывода 1-мерного массива
-    for (int i = 0; i < SIZE; i++)
-        cout << mas[i] << ' ';
-    cout << endl;
+    const short ROWS = 3;
+    const short COLS = 5;
+    int mas[ROWS][COLS]{};
+    int i, j;
+    // Цикл вывода 2-мерного массива
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++)
+            cout << mas[i][j] << '\t';
+        cout << endl;
+    }
 }
