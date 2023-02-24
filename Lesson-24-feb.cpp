@@ -5,12 +5,20 @@
 using std::cout;
 using std::endl;
 
+// Функция вывода 1-мерного массива на экран
+void show_1d_array(int m[], short sz)
+{
+    cout << m << endl;
+    // Цикл вывода 1-мерного массива
+    for (int i = 0; i < sz; i++)
+        cout << m[i] << ' ';
+    cout << endl;
+}
+
 int main()
 {
-    const short SIZE = 10;
+    const short SIZE = 20;
     int mas[SIZE]{};
-    // Цикл вывода 1-мерного массива
-    for (int i = 0; i < SIZE; i++)
-        cout << mas[i] << ' ';
-    cout << endl;
+    cout << mas << endl;
+    show_1d_array(mas, SIZE);
 }
